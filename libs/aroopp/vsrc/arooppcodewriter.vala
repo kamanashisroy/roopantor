@@ -24,6 +24,7 @@
 
 using aroop;
 using aroopp;
+using shotodol;
 
 /**
  * Code visitor generating aroopp API file for the public interface.
@@ -31,7 +32,7 @@ using aroopp;
 public class aroopp.CodeWriter : CodeVisitor {
 	private CodeContext context;
 	
-	FileStream stream;
+	FileOutputStream?stream;
 	
 	int indent;
 	/* at begin of line */
@@ -72,9 +73,9 @@ public class aroopp.CodeWriter : CodeVisitor {
 		this.context = context;
 
 		if (file_exists) {
-			stream = FileStream.open (temp_filename, "w");
+			stream = new FileOutputStream.open (temp_filename, "w");
 		} else {
-			stream = FileStream.open (filename, "w");
+			stream = new FileOutputStream.open (filename, "w");
 		}
 
 		if (stream == null) {
