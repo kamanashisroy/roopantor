@@ -2,7 +2,7 @@ using aroop;
 using shotodol;
 using roopantor;
 
-public class roopantor.AroopCompilerModule : ModulePlugin {
+public class roopantor.AroopCompilerModule : DynamicModule {
 	public override int init() {
 		return 0;
 	}
