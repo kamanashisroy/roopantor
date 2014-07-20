@@ -10,8 +10,8 @@ using valalang;
  *  @{
  */
 
-class valalang.ValaLangModule : DynamicModule {
-	public ValaLangModule() {
+public class valalang.ValaLangModule : DynamicModule {
+	ValaLangModule() {
 		extring nm = extring.set_static_string("valalang");
 		extring ver = extring.set_static_string("0.0.0");
 		base(&nm,&ver);

@@ -12,9 +12,9 @@ public class valaparse.ValaTokenizerTest : UnitTest {
 	}
 
 	public override int test() throws UnitTestError {
-		ValaTokenizer fileprocessor = new ValaTokenizer();
-		var testcode = xtring.set_static_string("var x = xtring();");
-		fileprocessor.parse(&testcode);
+		var fileprocessor = new ValaParserOutputStream();
+		var testcode = extring.set_static_string("var x = new xtring();");
+		fileprocessor.write(&testcode);
 		return 0;
 	}
 }

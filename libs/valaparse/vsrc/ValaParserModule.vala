@@ -7,7 +7,7 @@ using valaparse;
  */
 
 public class valaparse.ValaParserModule : DynamicModule {
-	public ValaParserModule() {
+	ValaParserModule() {
 		var nm = extring.set_static_string("valaparser");
 		var ver = extring.set_static_string("0.0.0");
 		base(&nm,&ver);

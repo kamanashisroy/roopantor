@@ -7,7 +7,7 @@ using valalang;
  */
 
 public abstract class valalang.ValaKeyword : Replicable {
-	public abstract void rehash(ValaInputStream parser);
+	public abstract void rehash(ValaOutputStream parser);
 }
 
 /* @} */

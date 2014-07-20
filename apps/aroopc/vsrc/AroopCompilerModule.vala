@@ -3,6 +3,11 @@ using shotodol;
 using roopantor;
 
 public class roopantor.AroopCompilerModule : DynamicModule {
+	AroopCompilerModule() {
+		var nm = extring.set_static_string("aroopc");
+		var ver = extring.set_static_string("0.0.0");
+		base(&nm,&ver);
+	}
 	public override int init() {
 		return 0;
 	}

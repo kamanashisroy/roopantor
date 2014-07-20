@@ -11,7 +11,7 @@ internal class valalang.ValaIterationKeyword : ValaKeyword {
 	public ValaIterationKeyword() {
 		base();
 	}
-	public override void rehash(ValaInputStream parser) {
+	public override void rehash(ValaOutputStream parser) {
 		var kw = extring.set_static_string("do");
 		DO = parser.addValaKeyword(&kw);
 		kw.rebuild_and_set_static_string("while");

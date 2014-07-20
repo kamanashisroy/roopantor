@@ -11,7 +11,7 @@ internal class valalang.ValaSynchronizationKeyword : ValaKeyword {
 	public ValaSynchronizationKeyword() {
 		base();
 	}
-	public override void rehash(ValaInputStream parser) {
+	public override void rehash(ValaOutputStream parser) {
 		extring kw = extring.set_static_string("lock");
 		LOCK = parser.addValaKeyword(&kw);
 	}

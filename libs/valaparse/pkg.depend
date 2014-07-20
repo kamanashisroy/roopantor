@@ -1,1 +1,7 @@
-OS_PLATFORM/platform_extra
+core/base
+libs/unittest
+libs/plugin
+-ONUBODH_HOME
+transform/strtrans
+-ROOPANTOR_HOME
+libs/valalang

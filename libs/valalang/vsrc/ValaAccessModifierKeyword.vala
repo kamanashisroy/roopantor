@@ -11,7 +11,7 @@ internal class valalang.ValaAccessModifierKeyword : ValaKeyword {
 	public ValaAccessModifierKeyword() {
 		base();
 	}
-	public override void rehash(ValaInputStream parser) {
+	public override void rehash(ValaOutputStream parser) {
 		extring kw = extring.set_static_string("public");
 		PUBLIC = parser.addValaKeyword(&kw);
 		kw.rebuild_and_set_static_string("private");

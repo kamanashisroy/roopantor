@@ -11,7 +11,7 @@ internal class valalang.ValaConstructionKeyword : ValaKeyword {
 	public ValaConstructionKeyword() {
 		base();
 	}
-	public override void rehash(ValaInputStream parser) {
+	public override void rehash(ValaOutputStream parser) {
 		extring kw = extring.set_static_string("construct");
 		CONSTRUCT = parser.addValaKeyword(&kw);
 		kw.rebuild_and_set_static_string("static construct");

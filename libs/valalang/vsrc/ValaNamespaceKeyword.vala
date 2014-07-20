@@ -11,7 +11,7 @@ internal class valalang.ValaNamespaceKeyword : ValaKeyword {
 	public ValaNamespaceKeyword() {
 		base();
 	}
-	public override void rehash(ValaInputStream parser) {
+	public override void rehash(ValaOutputStream parser) {
 		extring kw = extring.set_static_string("namespace");
 		NAMESPACE = parser.addValaKeyword(&kw);
 		kw.rebuild_and_set_static_string("using");
