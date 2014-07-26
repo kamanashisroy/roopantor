@@ -49,18 +49,22 @@ local ahome = string.gsub(configLines["PROJECT_HOME"],"roopantor$","shotodol")
 configLines["SHOTODOL_HOME"] = prompt("Shotodol path " .. ahome .. " > ", ahome)
 local ahome = string.gsub(configLines["PROJECT_HOME"],"roopantor$","onubodh")
 configLines["ONUBODH_HOME"] = prompt("Onubodh path " .. ahome .. " > ", ahome)
--- local ahome = string.gsub(configLines["PROJECT_HOME"],"roopantor$","roopkotha")
--- configLines["ROOPKOTHA_HOME"] = prompt("Roopkotha path " .. ahome .. " > ", ahome)
-configLines["CFLAGS+"] = ""
-if yes_no_to_bool(prompt_yes_no("enable debug (ggdb3) ?(y/n) > ")) then
-	configLines["CFLAGS+"] = configLines["CFLAGS+"] .. " -ggdb3"
-end
-configLines["CFLAGS+"] = configLines["CFLAGS+"] .. " -DPLUGIN_ROOT=\\\"$(PROJECT_HOME)/\\\""
--- if yes_no_to_bool(prompt_yes_no("enable GUI debug ?(y/n) > ")) then
---	configLines["VALAFLAGS+"] = " -D GUI_DEBUG"
--- end
 
 local conf = assert(io.open("build/.config.mk", "w"))
+
+-- import shotodol symbols
+local infile = assert(io.open(configLines["SHOTODOL_HOME"] .. "/build/.config.mk", "r"))
+local shotodol_config = infile:read("*a")
+infile:close()
+conf:write(shotodol_config);
+
+-- import onubodh symbols
+infile = assert(io.open(configLines["ONUBODH_HOME"] .. "/build/.config.mk", "r"))
+local onubodh_config = infile:read("*a")
+infile:close()
+conf:write(onubodh_config);
+
+
 for x in pairs(configLines) do
 	local op = configOps[x]
 	if op == nil then
