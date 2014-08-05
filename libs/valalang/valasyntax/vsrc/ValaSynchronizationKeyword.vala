@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-internal class valalang.ValaSynchronizationKeyword : ValaKeyword {
+internal class valalang.valasyntax.ValaSynchronizationKeyword : ValaKeyword {
 	int LOCK; // selection
 	public ValaSynchronizationKeyword() {
 		base();

@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valaparse;
+using valascan;
 
 /** \addtogroup valaparse
  *  @{
  */
 
-public class valaparse.ValaParserModule : DynamicModule {
+public class valascan.ValaParserModule : DynamicModule {
 	ValaParserModule() {
 		var nm = extring.set_static_string("valaparser");
 		var ver = extring.set_static_string("0.0.0");

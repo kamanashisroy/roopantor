@@ -1,18 +1,18 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
 /**
  * \ingroup vala
- * \defgroup valalang Vala language construct
+ * \defgroup valalang.valasyntax Vala language construct
  */
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-public class valalang.ValaLangModule : DynamicModule {
+public class valalang.valasyntax.ValaLangModule : DynamicModule {
 	ValaLangModule() {
-		extring nm = extring.set_static_string("valalang");
+		extring nm = extring.set_static_string("valalang.valasyntax");
 		extring ver = extring.set_static_string("0.0.0");
 		base(&nm,&ver);
 	}

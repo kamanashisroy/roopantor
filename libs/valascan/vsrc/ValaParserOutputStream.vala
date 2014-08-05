@@ -1,14 +1,14 @@
 using aroop;
 using shotodol;
-using valaparse;
-using valalang;
+using valascan;
+using valalang.valasyntax;
 
 /**
  * \ingroup valaparse
  * @{
  */
 
-public class valaparse.ValaParserOutputStream : valalang.ValaOutputStream {
+public class valascan.ValaParserOutputStream : ValaOutputStream {
 	public ValaTokenizer vt;
 	public ValaSourceMap vsrc;
 	public ValaParserOutputStream() {

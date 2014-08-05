@@ -1,3 +1,3 @@
-libs/valalang
-libs/valaparse
+libs/valalang/valasyntax
+libs/valascan
 apps/aroopc

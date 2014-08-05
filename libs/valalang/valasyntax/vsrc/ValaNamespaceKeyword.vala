@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-internal class valalang.ValaNamespaceKeyword : ValaKeyword {
+internal class valalang.valasyntax.ValaNamespaceKeyword : ValaKeyword {
 	int NAMESPACE;int USING; // selection
 	public ValaNamespaceKeyword() {
 		base();

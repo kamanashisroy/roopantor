@@ -1,11 +1,11 @@
 using aroop;
 using shotodol;
-using valaparse;
+using valascan;
 
 /** \addtogroup valaparse
  *  @{
  */
-public class valaparse.ValaTokenizerTest : UnitTest {
+internal class valascan.ValaTokenizerTest : UnitTest {
 	public ValaTokenizerTest() {
 		extring tname = extring.set_static_string("ValaTokenizer");
 		base(&tname);

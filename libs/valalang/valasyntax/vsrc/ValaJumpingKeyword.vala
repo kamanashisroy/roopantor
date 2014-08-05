@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-internal class valalang.ValaJumpingKeyword : ValaKeyword {
+internal class valalang.valasyntax.ValaJumpingKeyword : ValaKeyword {
 	int BREAK;int CONTINUE;int RETURN; // jumping
 	public ValaJumpingKeyword() {
 		base();

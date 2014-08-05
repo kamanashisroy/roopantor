@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-internal class valalang.ValaIterationKeyword : ValaKeyword {
+internal class valalang.valasyntax.ValaIterationKeyword : ValaKeyword {
 	int DO;int WHILE;int FOR;int FOREACH;int IN; // iteration
 	public ValaIterationKeyword() {
 		base();

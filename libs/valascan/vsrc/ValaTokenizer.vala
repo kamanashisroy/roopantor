@@ -1,7 +1,7 @@
 using aroop;
 using shotodol;
 using onubodh;
-using valaparse;
+using valascan;
 
 /**
  * \ingroup lib
@@ -9,7 +9,7 @@ using valaparse;
  * @{
  */
 
-public struct valaparse.ValaTokenizerIterator {
+public struct valascan.ValaTokenizerIterator {
 	public WordMap*m;
 	public extring kernel;
 	public int blockPos;
@@ -28,7 +28,7 @@ public struct valaparse.ValaTokenizerIterator {
 	}
 }
 
-public class valaparse.ValaTokenizer : onubodh.WordTransform {
+public class valascan.ValaTokenizer : WordTransform {
 	public ValaTokenizer() {
 	}
 

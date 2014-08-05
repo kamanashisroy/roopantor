@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-internal class valalang.ValaSelectionKeyword : ValaKeyword {
+internal class valalang.valasyntax.ValaSelectionKeyword : ValaKeyword {
 	int IF;int ELSE;int SWITCH;int CASE;int DEFAULT; // selection
 	public ValaSelectionKeyword() {
 		base();

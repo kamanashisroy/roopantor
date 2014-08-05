@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-internal class valalang.ValaOperatorKeyword : ValaKeyword {
+internal class valalang.valasyntax.ValaOperatorKeyword : ValaKeyword {
 	int AS;int IS;int IN;int NEW;int DELETE;int SIZEOF;int TYPEOF; // operator keywords
 	public ValaOperatorKeyword() {
 		base();

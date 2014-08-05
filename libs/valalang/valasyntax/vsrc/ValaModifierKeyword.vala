@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-internal class valalang.ValaModifierKeyword : ValaKeyword {
+internal class valalang.valasyntax.ValaModifierKeyword : ValaKeyword {
 	int CONST;int WEAK;int UNOWNED;int DYNAMIC; // type modifiers
 	public ValaModifierKeyword() {
 		base();

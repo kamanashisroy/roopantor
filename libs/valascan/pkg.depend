@@ -4,4 +4,4 @@ libs/plugin
 -ONUBODH_HOME
 transform/strtrans
 -ROOPANTOR_HOME
-libs/valalang
+libs/valalang/valasyntax

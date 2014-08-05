@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-internal class valalang.ValaExceptionKeyword : ValaKeyword {
+internal class valalang.valasyntax.ValaExceptionKeyword : ValaKeyword {
 	int TRY;int CATCH;int FINALLY;int THROW; // exception handling
 	public ValaExceptionKeyword() {
 		base();

@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-internal class valalang.ValaLiteralKeyword : ValaKeyword {
+internal class valalang.valasyntax.ValaLiteralKeyword : ValaKeyword {
 	int NULL;int TRUE;int FALSE; // literal keywords
 	public ValaLiteralKeyword() {
 		base();

@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-internal class valalang.ValaPropertyKeyword : ValaKeyword {
+internal class valalang.valasyntax.ValaPropertyKeyword : ValaKeyword {
 	int GET;int SET;int CONSTRUCT;int DEFAULT;int VALUE; // property context
 	public ValaPropertyKeyword() {
 		base();

@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-internal class valalang.ValaConstructionKeyword : ValaKeyword {
+internal class valalang.valasyntax.ValaConstructionKeyword : ValaKeyword {
 	int CONSTRUCT;int STATIC_CONSTRUCT;int CLASS_CONSTRUCT; // construction blocks
 	public ValaConstructionKeyword() {
 		base();

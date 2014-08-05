@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-public abstract class valalang.ValaOutputStream : OutputStream {
+public abstract class valalang.valasyntax.ValaOutputStream : OutputStream {
 	public ValaOutputStream() {
 		base();
 	}

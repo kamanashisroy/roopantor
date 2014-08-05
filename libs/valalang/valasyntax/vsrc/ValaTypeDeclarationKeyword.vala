@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-internal class valalang.ValaTypeDeclarationKeyword : ValaKeyword {
+internal class valalang.valasyntax.ValaTypeDeclarationKeyword : ValaKeyword {
 	int CLASS;int INTERFACE;int STRUCT;int ENUM;int DELEGATE;int ERRORDOMAIN; // type declaration
 	public ValaTypeDeclarationKeyword() {
 		base();

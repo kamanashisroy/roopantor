@@ -1,12 +1,12 @@
 using aroop;
 using shotodol;
-using valalang;
+using valalang.valasyntax;
 
-/** \addtogroup valalang
+/** \addtogroup valalang.valasyntax
  *  @{
  */
 
-internal class valalang.ValaAccessModifierKeyword : ValaKeyword {
+internal class valalang.valasyntax.ValaAccessModifierKeyword : ValaKeyword {
 	int PUBLIC;int PRIVATE;int PROTECTED;int INTERNAL; // access modifiers
 	public ValaAccessModifierKeyword() {
 		base();

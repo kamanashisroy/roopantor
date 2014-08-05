@@ -1,9 +1,9 @@
 using aroop;
 using shotodol;
 using onubodh;
-using valaparse;
+using valascan;
 
-public errordomain valaparse.ValaTokenizerError {
+public errordomain valascan.ValaSourceError {
 	TOO_BIG,
 }
 /**
@@ -11,7 +11,7 @@ public errordomain valaparse.ValaTokenizerError {
  * \defgroup valaparse Vala Parser
  * @{
  */
-public class valaparse.ValaSourceMap : Replicable {
+public class valascan.ValaSourceMap : Replicable {
 	public WordMap map;
 	public ValaSourceMap(int sourceLength = 1024) {
 		map = WordMap();
@@ -20,9 +20,9 @@ public class valaparse.ValaSourceMap : Replicable {
 		map.source.buffer(sourceLength);
 	}
 
-	public void concat(extring*buf) throws ValaTokenizerError.TOO_BIG {
+	public void concat(extring*buf) throws ValaSourceError.TOO_BIG {
 		if(map.source.length() + buf.length() > map.source.size()) {
-			throw new ValaTokenizerError.TOO_BIG("Buffer full");
+			throw new ValaSourceError.TOO_BIG("Buffer full");
 		}
 		map.source.concat(buf);
 	}
