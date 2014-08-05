@@ -3,3 +3,4 @@ onLoad:
 	module -load libs/valalang/dynalib.so
 	module -load libs/valaparse/dynalib.so
 	module -load apps/aroopc/dynalib.so
+	unittest -t ValaTokenizer
