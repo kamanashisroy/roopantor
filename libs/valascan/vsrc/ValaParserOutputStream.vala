@@ -18,13 +18,10 @@ public class valascan.ValaParserOutputStream : ValaOutputStream {
 
 	public int rehash() {
 		var kwx = extring.set_static_string("keywords");
-		var x = (AnyInterfaceExtension)Plugin.get(&kwx);
-		do {
+		Plugin.acceptVisitor(&kwx, (x) => {
 			var kw = (ValaKeyword)x.getInterface(null);
 			kw.rehash(this);
-			var xnext = (AnyInterfaceExtension)x.getNext();
-			x = xnext;
-		} while(x != null);
+		});
 		return 0;
 	}
 

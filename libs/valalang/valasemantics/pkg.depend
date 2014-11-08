@@ -1,0 +1,6 @@
+libs/plugin
+libs/module
+libs/iostream
+core/base
+-ROOPANTOR_HOME
+libs/valascan

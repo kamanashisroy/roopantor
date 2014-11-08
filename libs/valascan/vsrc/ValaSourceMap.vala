@@ -15,9 +15,9 @@ public class valascan.ValaSourceMap : Replicable {
 	public WordMap map;
 	public ValaSourceMap(int sourceLength = 1024) {
 		map = WordMap();
-		map.kernel.buffer(sourceLength);
-		map.map.buffer(sourceLength);
-		map.source.buffer(sourceLength);
+		map.kernel.rebuild_in_heap(sourceLength);
+		map.map.rebuild_in_heap(sourceLength);
+		map.source.rebuild_in_heap(sourceLength);
 	}
 
 	public void concat(extring*buf) throws ValaSourceError.TOO_BIG {
