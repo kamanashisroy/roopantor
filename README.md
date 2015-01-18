@@ -10,3 +10,10 @@ Vala compilation steps.
 	* syntax checking
 	* object code
 	* linking
+
+
+Architecture
+==============
+
+![Component diagram](docs/diagrams/component.svg)
+
